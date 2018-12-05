@@ -6,6 +6,8 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import jdk.nashorn.internal.ir.annotations.Ignore;
+
 class TextManipulatorTest {
 
 	@Test
@@ -33,6 +35,6 @@ class TextManipulatorTest {
 	void testEncodeText() {
 		String text = "AVAT";
 
-		assertEquals("MQMY", TextManipulator.encodeText(text));
+		assertEquals("MEMG", TextManipulator.encodeText(text));
 	}
 }
