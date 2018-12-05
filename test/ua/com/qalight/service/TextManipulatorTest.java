@@ -10,21 +10,29 @@ class TextManipulatorTest {
 
 	@Test
 	void testGetKeyOne() {
-		fail("Not yet implemented");
+		String value = TextManipulator.getKeyOne().get("A");
+
+		assertEquals("M", value);
 	}
 
 	@Test
 	void testGetKeyTwo() {
-		fail("Not yet implemented");
+		String value = TextManipulator.getKeyTwo().get("A");
+
+		assertEquals("Z", value);
 	}
-	
+
 	@Test
 	void testModifyText() {
-		fail("Not yet implemented");
+		String text = "A%va Tr7U6$9 Iu^3fT";
+
+		assertEquals("AVATRUIUFT", TextManipulator.modifyText(text));
 	}
-	
+
 	@Test
 	void testEncodeText() {
-		fail("Not yet implemented");
+		String text = "AVAT";
+
+		assertEquals("MQMY", TextManipulator.encodeText(text));
 	}
 }
